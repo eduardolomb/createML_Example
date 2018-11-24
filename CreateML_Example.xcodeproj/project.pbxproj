@@ -13,8 +13,6 @@
 		66A9228421A8DED400D71FC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66A9228321A8DED400D71FC3 /* Assets.xcassets */; };
 		66A9228721A8DED400D71FC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66A9228521A8DED400D71FC3 /* LaunchScreen.storyboard */; };
 		66A9228F21A8DF2E00D71FC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66A9228E21A8DF2E00D71FC3 /* Main.storyboard */; };
-		66A9229121A8E89C00D71FC3 /* imageClassifierNew.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 66A9229021A8E89C00D71FC3 /* imageClassifierNew.mlmodel */; };
-		66A9229321A8EC5E00D71FC3 /* imageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 66A9229221A8EC5D00D71FC3 /* imageClassifier.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +24,6 @@
 		66A9228621A8DED400D71FC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		66A9228821A8DED400D71FC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66A9228E21A8DF2E00D71FC3 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		66A9229021A8E89C00D71FC3 /* imageClassifierNew.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = imageClassifierNew.mlmodel; sourceTree = "<group>"; };
-		66A9229221A8EC5D00D71FC3 /* imageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = imageClassifier.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +58,6 @@
 			children = (
 				66A9227921A8DED300D71FC3 /* AppDelegate.swift */,
 				66A9227B21A8DED300D71FC3 /* ViewController.swift */,
-				66A9229221A8EC5D00D71FC3 /* imageClassifier.mlmodel */,
-				66A9229021A8E89C00D71FC3 /* imageClassifierNew.mlmodel */,
 				66A9228E21A8DF2E00D71FC3 /* Main.storyboard */,
 				66A9228321A8DED400D71FC3 /* Assets.xcassets */,
 				66A9228521A8DED400D71FC3 /* LaunchScreen.storyboard */,
@@ -144,8 +138,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66A9229121A8E89C00D71FC3 /* imageClassifierNew.mlmodel in Sources */,
-				66A9229321A8EC5E00D71FC3 /* imageClassifier.mlmodel in Sources */,
 				66A9228221A8DED300D71FC3 /* CreateML_Example.xcdatamodeld in Sources */,
 				66A9227C21A8DED300D71FC3 /* ViewController.swift in Sources */,
 				66A9227A21A8DED300D71FC3 /* AppDelegate.swift in Sources */,

@@ -129,13 +129,6 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         }
     }
     
-    func setupVision() {
-         guard let visionModel = try? VNCoreMLModel(for: imageClassifier().model)
-        else { fatalError("Can't load VisionML model") }
-        let classificationRequest = VNCoreMLRequest(model: visionModel, completionHandler: handleClassifications)
-        classificationRequest.imageCropAndScaleOption = VNImageCropAndScaleOption.centerCrop
-        self.requests = [classificationRequest]
-    }
     
     //MARK: - Layout Configurations
     func setupLayout() {
