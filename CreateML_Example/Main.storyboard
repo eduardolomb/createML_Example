@@ -34,20 +34,14 @@
                                             <action selector="validateSwitchTap:" destination="BYZ-38-t0r" eventType="valueChanged" id="mb9-ee-Cwo"/>
                                         </connections>
                                     </switch>
-                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YHn-ae-ggw">
-                                        <rect key="frame" x="0.0" y="604.5" width="375" height="2"/>
-                                    </progressView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.33174929469999997" green="0.41866420710000002" blue="0.88078997459999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="YHn-ae-ggw" firstAttribute="leading" secondItem="Ibc-Lv-097" secondAttribute="leading" id="2G3-XI-vzp"/>
                                     <constraint firstAttribute="trailing" secondItem="pS8-rA-dKO" secondAttribute="trailing" constant="25" id="ODT-3n-wtw"/>
                                     <constraint firstAttribute="trailing" secondItem="rCd-NG-Dr0" secondAttribute="trailing" constant="10" id="UtN-sP-1PQ"/>
-                                    <constraint firstItem="rCd-NG-Dr0" firstAttribute="top" secondItem="YHn-ae-ggw" secondAttribute="bottom" constant="10" id="Wrh-CW-D2p"/>
                                     <constraint firstItem="rCd-NG-Dr0" firstAttribute="leading" secondItem="Ibc-Lv-097" secondAttribute="leading" constant="10" id="YMP-di-z7D"/>
                                     <constraint firstAttribute="bottom" secondItem="rCd-NG-Dr0" secondAttribute="bottom" constant="30" id="au1-JJ-jve"/>
                                     <constraint firstItem="pS8-rA-dKO" firstAttribute="top" secondItem="Ibc-Lv-097" secondAttribute="top" constant="40" id="nuz-oT-le8"/>
-                                    <constraint firstAttribute="trailing" secondItem="YHn-ae-ggw" secondAttribute="trailing" id="oxB-NN-hez"/>
                                 </constraints>
                             </view>
                         </subviews>

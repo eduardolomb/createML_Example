@@ -27,7 +27,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         guard
             let backCamera = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back),
             let input = try? AVCaptureDeviceInput(device: backCamera)
-            else { return session }
+            else { return AVCaptureSession.init() }
         session.addInput(input)
         return session
     }()
@@ -103,13 +103,9 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         
         setupLayout()
         setupCamera()
-        let videoOutput = AVCaptureVideoDataOutput()
-        videoOutput.setSampleBufferDelegate(self, queue: DispatchQueue(label: "MyCameraQueue"))
-        self.captureSession.addOutput(videoOutput)
         setupVision()
         
     }
-    
     
     //MARK: - CoreML Classifier and configurer
     func handleClassifications(request: VNRequest, error: Error?) {
@@ -119,7 +115,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         print(observations)
         let classifications = observations[0...4]
             .compactMap({ $0 as? VNClassificationObservation })
-            .filter({ $0.confidence > 0.8 })
+            .filter({ $0.confidence > 0.3 })
             .sorted(by: { $0.confidence > $1.confidence })
             .map {
                 
@@ -133,6 +129,13 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         }
     }
     
+    func setupVision() {
+         guard let visionModel = try? VNCoreMLModel(for: imageClassifier().model)
+        else { fatalError("Can't load VisionML model") }
+        let classificationRequest = VNCoreMLRequest(model: visionModel, completionHandler: handleClassifications)
+        classificationRequest.imageCropAndScaleOption = VNImageCropAndScaleOption.centerCrop
+        self.requests = [classificationRequest]
+    }
     
     //MARK: - Layout Configurations
     func setupLayout() {
