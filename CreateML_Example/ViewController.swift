@@ -11,11 +11,11 @@ import CoreML
 import Vision
 import AVFoundation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
 
-    @IBOutlet weak var uiRecognitionLabel: UILabel?
-    @IBOutlet weak var uiSwitch: UISwitch?
-    @IBOutlet weak var uiCameraView: UIView?
+    @IBOutlet private weak var uiRecognitionLabel: UILabel?
+    @IBOutlet private weak var uiSwitch: UISwitch?
+    @IBOutlet private weak var uiCameraView: UIView?
     
     override var prefersStatusBarHidden: Bool {
         return true
@@ -25,7 +25,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
 
 }
 
