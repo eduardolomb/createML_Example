@@ -31,7 +31,7 @@
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pS8-rA-dKO">
                                         <rect key="frame" x="301" y="40" width="51" height="31"/>
                                         <connections>
-                                            <action selector="validateSwitchTap:" destination="BYZ-38-t0r" eventType="valueChanged" id="Y9X-O4-BRo"/>
+                                            <action selector="validateSwitchTap:" destination="BYZ-38-t0r" eventType="valueChanged" id="mb9-ee-Cwo"/>
                                         </connections>
                                     </switch>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YHn-ae-ggw">
